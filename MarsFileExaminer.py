@@ -5,6 +5,21 @@ class climate_mars:
     '''
     Class to handle the MARS database output in order to extract relevant
     information (lat, long of stations etc.)
+    
+    Usage:
+    clim = climate_mars(file)
+    clim.output_stations(out_file)
+
+    clipped_file = (PATH_TO_CLIPPED_FILE)
+
+    clim.clip_data_to_region(clipped_file)
+
+    start_date = 'YYYY-MM-DD'
+    end_date = 'YYYY-MM-DD'
+
+    clim.clip_data_to_date(start_date, end_date)
+
+    clim.metfile_creator(output_folder)
     '''
     
     def __init__(self, file_path):
